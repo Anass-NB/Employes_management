@@ -1,0 +1,74 @@
+body {
+  background-image: url("https://www.myhrtoolkit.com/hubfs/differences-employee-worker.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+.overlay {
+  background-color: rgba(0, 0, 0, 0.859);
+  position: relative;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+}
+.content {
+  z-index: 2;
+}
+
+.content .text h2 {
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-176%);
+  font-size: 45px;
+  letter-spacing: 2px;
+  /* box-shadow:0px 10px 26px -12px #ddd; */
+
+}
+.content .text button{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,100%);
+  border: 2px solid rgb(143, 138, 138);
+  background-color: black;
+
+  transition: .3s;
+
+}
+.content .text button:hover {
+  background-color: transparent;
+  border: 2px solid rgb(255, 255, 255);
+
+}
+.content .text button a{
+  text-decoration: none;
+  padding: 10px 15px;
+  display: block;
+  letter-spacing: 1px;
+
+}
+.content .text p {
+  font-size: 26px;
+  letter-spacing: 4px;
+  position: absolute;
+  width: 549px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  overflow: hidden;
+  white-space: nowrap;
+  animation : control-width 3s steps(22) 2s backwards ;
+}
+
+
+@keyframes control-width {
+  from {
+    width: 0;
+  }
+  to {
+    width: 549px;
+  }
+}
